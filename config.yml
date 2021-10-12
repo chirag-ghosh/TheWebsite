@@ -2,6 +2,9 @@ baseURL: "https://chirag828049.github.io/TheWebsite/"
 languageCode: en-us
 title: Chirag Ghosh
 theme: "PaperMod"
+paginate: 5
+
+buildDrafts: true
 
 languages:
   en:
@@ -11,6 +14,9 @@ languages:
       main:
         - name: About Me
           url: about
+          weight: 10
+        - name: Posts
+          url: posts
           weight: 10
         - name: Tags
           url: tags/
