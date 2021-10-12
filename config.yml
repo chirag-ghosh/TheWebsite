@@ -1,4 +1,9 @@
-baseURL: http://example.org/
+baseURL: "https://chirag828049.github.io/TheWebsite/"
 languageCode: en-us
 title: Chirag Ghosh
 theme: "PaperMod"
+
+params:
+
+  assets:
+    favicon: "static/favicon.png"
