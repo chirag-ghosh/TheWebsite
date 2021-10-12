@@ -3,7 +3,36 @@ languageCode: en-us
 title: Chirag Ghosh
 theme: "PaperMod"
 
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: About Me
+          url: about
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
 params:
 
   assets:
-    favicon: "static/favicon.png"
+    favicon: "favicon.png"
+
+  homeInfoParams:
+    Title: I am a Web Developer
+    # Content: >
+    #   I am a **Web Developer**.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/chirag828049"
+    - name: youtube
+      url: "https://www.youtube.com/chiragghosh"
+    - name: twitter
+      url: "https://twitter.com/cghosh828049"
