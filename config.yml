@@ -50,3 +50,8 @@ params:
     imageTitle: "Chirag"
     imageWidth: 300
     imageHeight: 300
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
