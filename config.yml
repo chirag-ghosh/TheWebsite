@@ -12,14 +12,13 @@ languages:
         - name: About Me
           url: about
           weight: 10
-        - name: Search
-          url: search/
-          weight: 10
         - name: Tags
           url: tags/
           weight: 10
 
 params:
+
+  defaultTheme: auto
 
   assets:
     favicon: "favicon.png"
@@ -36,3 +35,12 @@ params:
       url: "https://www.youtube.com/chiragghosh"
     - name: twitter
       url: "https://twitter.com/cghosh828049"
+
+  profileMode:
+    enabled: true
+    title: "Chirag Ghosh"
+    subtitle: "I am a Web Developer"
+    imageUrl: "logo.png"
+    imageTitle: "Chirag"
+    imageWidth: 300
+    imageHeight: 300
