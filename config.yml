@@ -4,7 +4,7 @@ title: Chirag Ghosh
 theme: "PaperMod"
 paginate: 5
 
-buildDrafts: true
+buildDrafts: false
 
 languages:
   en:
