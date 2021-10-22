@@ -6,6 +6,8 @@ paginate: 5
 
 buildDrafts: false
 
+enableEmoji: true
+
 languages:
   en:
     languageName: "English"
