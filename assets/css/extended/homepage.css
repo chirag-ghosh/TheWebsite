@@ -1,0 +1,34 @@
+.body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    transition: all .2s;
+}
+
+a:hover {
+    color: #F0A500;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 1rem;
+}
+
+.profile_inner h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.profile_inner span {
+    white-space: pre;
+}
+
+#menu a {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}

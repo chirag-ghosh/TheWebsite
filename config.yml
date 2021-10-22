@@ -45,7 +45,7 @@ params:
   profileMode:
     enabled: true
     title: "Chirag Ghosh"
-    subtitle: "I am a Web Developer"
+    subtitle: "Student  |  Coder  |  Photographer"
     imageUrl: "logo.png"
     imageTitle: "Chirag"
     imageWidth: 300
