@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | Chirag Ghosh</title>
+<title>Gallery | Chirag Ghosh</title>
 <meta name="keywords" content="" />
-<meta name="description" content="">
+<meta name="description" content="Test">
 <meta name="author" content="">
-<link rel="canonical" href="https://chirag828049.github.io/TheWebsite/categories/" />
+<link rel="canonical" href="https://chirag828049.github.io/TheWebsite/gallery/" />
 <link crossorigin="anonymous" href="/TheWebsite/assets/css/stylesheet.min.74a492a0e0b0eac8dfaea5f531ea5a0f49e91e1526573f98bbb5a8f020e2fe6e.css" integrity="sha256-dKSSoOCw6sjfrqX1MepaD0npHhUmVz&#43;Yu7Wo8CDi/m4=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/TheWebsite/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://chirag828049.github.io/TheWebsite/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://chirag828049.github.io/TheWebsite/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chirag828049.github.io/TheWebsite/favicon-32x32.png">
@@ -23,7 +25,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Titillium+Web&display=swap" rel="stylesheet">
 <meta name="generator" content="Hugo 0.88.1" />
-<link rel="alternate" type="application/rss+xml" href="https://chirag828049.github.io/TheWebsite/categories/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,18 +61,64 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://chirag828049.github.io/TheWebsite/categories/" />
+</noscript><meta property="og:title" content="Gallery" />
+<meta property="og:description" content="Test" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chirag828049.github.io/TheWebsite/gallery/" /><meta property="article:section" content="" />
+
+
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Gallery"/>
+<meta name="twitter:description" content="Test"/>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Gallery",
+      "item": "https://chirag828049.github.io/TheWebsite/gallery/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Gallery",
+  "name": "Gallery",
+  "description": "Test",
+  "keywords": [
+    
+  ],
+  "articleBody": "Test\n",
+  "wordCount" : "1",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chirag828049.github.io/TheWebsite/gallery/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chirag Ghosh",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chirag828049.github.io/TheWebsite/favicon.png"
+    }
+  }
+}
+</script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -118,7 +165,7 @@
             </li>
             <li>
                 <a href="https://chirag828049.github.io/TheWebsite/gallery" title="Gallery">
-                    <span>Gallery</span>
+                    <span class="active">Gallery</span>
                 </a>
             </li>
             <li>
@@ -130,12 +177,39 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
+<div class="gallery-container" id="galleryContainer">
+    
+</div>
+<script>
 
-<ul class="terms-tags">
-</ul>
+    const galleryLoader = () => {
+        const container = document.getElementById("galleryContainer");
+        container.innerHTML = "testing js";
+
+        const myRequest = new Request('https://api.imgur.com/3/credits', {
+            method: 'GET',
+            'Content-Type': 'application/json',
+            'Retry-After': 120,
+            Authorization: 'Client-ID 934b47f5dc616b9'
+        });
+
+        fetch(myRequest).then(myResponse => {
+            console.log(myResponse);
+        });
+    }
+
+    const testRequest = () => {
+        
+        const myRequest = new Request('https://randomuser.me/api/');
+
+        fetch('https://randomuser.me/api/').then(myResponse => {
+            myRequest.json().then(result => {
+                console.log(result)
+;            })
+        });
+    }
+    
+</script>
     </main>
     
 <footer class="footer">
