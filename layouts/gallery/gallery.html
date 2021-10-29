@@ -1,0 +1,57 @@
+{{- define "gallery" }}
+<div class="gallery-container" id="galleryContainer">
+    
+</div>
+<script>
+
+    //Fisher-Yates shuffle algorithm
+    const shuffle = (array) => {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+    }
+
+    const galleryLoader = async () => {
+        const container = document.getElementById("galleryContainer");
+
+        const myHeaders = new Headers();
+        myHeaders.append('Authorization', 'Client-ID ab142a02ee43a2c');
+
+        const myRequest = new Request('https://api.imgur.com/3/album/hjL6R66', {
+            headers: myHeaders,
+        });
+
+        const myResponse = await fetch(myRequest);
+        console.log(myResponse);
+        const responsejson = await myResponse.json();
+        console.log(responsejson);
+        var imgLinks = responsejson.data.images.map((img) => img.link);
+        console.log(imgLinks);
+
+        imgLinks = shuffle(imgLinks);
+
+        for(var i = 0; i < imgLinks.length; i++) {
+
+            var img = document.createElement('img');
+            img.setAttribute('src', imgLinks[i]);
+            img.className = 'gallery-img';
+            container.appendChild(img);
+        }
+    }
+
+    window.onload = galleryLoader();
+    
+</script>
+{{- end }}{{/* end gallery */ -}}

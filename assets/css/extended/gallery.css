@@ -1,0 +1,34 @@
+.gallery-container {
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+    margin: 5rem 5rem 0 5rem;
+}
+
+@media (max-width: 1000px) {
+    .gallery-container {
+        column-count: 3;
+        margin: 4rem 4rem 0 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery-container {
+        column-count: 2;
+        margin: 2.5rem 2.5rem 0 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        column-count: 1;
+        margin: 1rem 1rem 0 1rem;
+    }
+}
+
+.gallery-img {
+    
+    width: 100% !important;
+    height: auto !important;
+    padding: .5rem;
+}

@@ -20,13 +20,14 @@ languages:
         - name: Posts
           url: posts
           weight: 10
-        - name: Tags
-          url: tags/
+        - name: Gallery
+          url: gallery
           weight: 10
 
 params:
 
   defaultTheme: auto
+  ShowBreadCrumbs: true
 
   assets:
     favicon: "favicon.png"
