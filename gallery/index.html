@@ -186,8 +186,11 @@
         const container = document.getElementById("galleryContainer");
         container.innerHTML = "testing js";
 
+        const myHeaders = new Headers();
+        myHeaders.append('Authorization', 'Client-ID ab142a02ee43a2c');
+
         const myRequest = new Request('https://api.imgur.com/3/gallery/album/z7u4CbD', {
-            Authorization: 'Client-ID ab142a02ee43a2c'
+            headers: myHeaders,
         });
 
         const myResponse = await fetch(myRequest);
