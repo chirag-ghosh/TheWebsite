@@ -182,20 +182,18 @@
 </div>
 <script>
 
-    const galleryLoader = () => {
+    const galleryLoader = async () => {
         const container = document.getElementById("galleryContainer");
         container.innerHTML = "testing js";
 
         const myRequest = new Request('https://api.imgur.com/3/gallery/album/z7u4CbD', {
-            method: 'GET',
-            'Content-Type': 'application/json',
-            'Retry-After': 120,
             Authorization: 'Client-ID 934b47f5dc616b9'
         });
 
-        fetch(myRequest).then(myResponse => {
-            console.log(myResponse);
-        });
+        const myResponse = await fetch(myRequest);
+        console.log(myResponse);
+        const responsejson = await myResponse.json();
+        console.log(responsejson);
     }
 
     const testRequest = () => {
