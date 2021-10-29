@@ -10,7 +10,7 @@
 <meta name="description" content="Test">
 <meta name="author" content="">
 <link rel="canonical" href="https://chirag828049.github.io/TheWebsite/gallery/" />
-<link crossorigin="anonymous" href="/TheWebsite/assets/css/stylesheet.min.74a492a0e0b0eac8dfaea5f531ea5a0f49e91e1526573f98bbb5a8f020e2fe6e.css" integrity="sha256-dKSSoOCw6sjfrqX1MepaD0npHhUmVz&#43;Yu7Wo8CDi/m4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/TheWebsite/assets/css/stylesheet.min.9341229ff65a92ef8ba0afa66d2255b9c296ea0b58665e44feb82ae86297490c.css" integrity="sha256-k0Ein/Zaku&#43;LoK&#43;mbSJVucKW6gtYZl5E/rgq6GKXSQw=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/TheWebsite/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://chirag828049.github.io/TheWebsite/favicon.png">
@@ -176,15 +176,33 @@
         </ul>
     </nav>
 </header>
-<main class="main">
+<div class="gallery">
 <div class="gallery-container" id="galleryContainer">
     
 </div>
 <script>
 
+    
+    const shuffle = (array) => {
+    let currentIndex = array.length,  randomIndex;
+
+    
+    while (currentIndex != 0) {
+
+        
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+    }
+
     const galleryLoader = async () => {
         const container = document.getElementById("galleryContainer");
-        container.innerHTML = "testing js";
 
         const myHeaders = new Headers();
         myHeaders.append('Authorization', 'Client-ID ab142a02ee43a2c');
@@ -197,20 +215,25 @@
         console.log(myResponse);
         const responsejson = await myResponse.json();
         console.log(responsejson);
+        var imgLinks = responsejson.data.images.map((img) => img.link);
+        console.log(imgLinks);
+
+        imgLinks = shuffle(imgLinks);
+
+        for(var i = 0; i < imgLinks.length; i++) {
+
+            var img = document.createElement('img');
+            img.setAttribute('src', imgLinks[i]);
+            img.className = 'gallery-img';
+            container.appendChild(img);
+        }
     }
 
-    const testRequest = () => {
-        
-        const myRequest = new Request('https://randomuser.me/api/');
-
-        fetch('https://randomuser.me/api/').then(myResponse => {
-            myRequest.json().then(result => {
-                console.log(result)
-;            })
-        });
-    }
+    window.onload = galleryLoader();
     
 </script>
+    </div>
+    <main class="main">
     </main>
     
 <footer class="footer">
