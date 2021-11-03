@@ -2,6 +2,7 @@
 title: "The One With My Fear Of Coding"
 date: 2021-11-04T01:18:47+05:30
 draft: false
+tags: ["life", "non-tech", "self"]
 ---
 
 No it wasn't my idea to write this. The next two paragraphs weren't even written for this. I was writing the about section for this website of mine. Halfway through, I realised that if I continue writing this, my about page will turn into a 500 line "Chirag's childhood" real quick. So rather a post.
