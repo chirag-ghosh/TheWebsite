@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chirag Ghosh</title>
-    <link>https://chirag828049.github.io/TheWebsite/</link>
+    <link>https://blog.chiragghosh.me/</link>
     <description>Recent content on Chirag Ghosh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Nov 2021 01:18:47 +0530</lastBuildDate><atom:link href="https://chirag828049.github.io/TheWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 01:18:47 +0530</lastBuildDate><atom:link href="https://blog.chiragghosh.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The One With My Fear Of Coding</title>
-      <link>https://chirag828049.github.io/TheWebsite/posts/fear-of-coding/</link>
+      <link>https://blog.chiragghosh.me/posts/fear-of-coding/</link>
       <pubDate>Thu, 04 Nov 2021 01:18:47 +0530</pubDate>
       
-      <guid>https://chirag828049.github.io/TheWebsite/posts/fear-of-coding/</guid>
+      <guid>https://blog.chiragghosh.me/posts/fear-of-coding/</guid>
       <description>No it wasn&amp;rsquo;t my idea to write this. The next two paragraphs weren&amp;rsquo;t even written for this. I was writing the about section for this website of mine. Halfway through, I realised that if I continue writing this, my about page will turn into a 500 line &amp;ldquo;Chirag&amp;rsquo;s childhood&amp;rdquo; real quick. So rather a post.
 My earliest engagement with programming was in class 7 because of BASIC. Ngl, I hated it.</description>
     </item>
     
     <item>
       <title>The Pilot</title>
-      <link>https://chirag828049.github.io/TheWebsite/posts/hello-world/</link>
+      <link>https://blog.chiragghosh.me/posts/hello-world/</link>
       <pubDate>Tue, 12 Oct 2021 21:51:09 +0530</pubDate>
       
-      <guid>https://chirag828049.github.io/TheWebsite/posts/hello-world/</guid>
+      <guid>https://blog.chiragghosh.me/posts/hello-world/</guid>
       <description>Hey there. I started blogging!
 I have been thinking about this since a lot. Finally pushed myself and created this. And ofcourse I will change this default theme. PaperMod gives a solid start though. Ok, no more pep talk. Leaving behind a pic I took in my so far only visit to my campus.
 Byee
@@ -32,10 +32,10 @@ Tata Steel Sports Complex, IIT Kharagpur</description>
     
     <item>
       <title></title>
-      <link>https://chirag828049.github.io/TheWebsite/about/</link>
+      <link>https://blog.chiragghosh.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chirag828049.github.io/TheWebsite/about/</guid>
+      <guid>https://blog.chiragghosh.me/about/</guid>
       <description>Hello There&amp;hellip;.
 I am Chirag Ghosh (as the title suggests XD). A Student, Programmer and Photographer.
 At the time of writing this, I am exploring the world of algorithms and web development.
@@ -44,10 +44,10 @@ I hate CP although I find DSA intriguing. I find the open source community aweso
     
     <item>
       <title>Gallery</title>
-      <link>https://chirag828049.github.io/TheWebsite/gallery/</link>
+      <link>https://blog.chiragghosh.me/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chirag828049.github.io/TheWebsite/gallery/</guid>
+      <guid>https://blog.chiragghosh.me/gallery/</guid>
       <description>A small gallery of the beauties&amp;hellip;.</description>
     </item>
     

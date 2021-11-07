@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>non-tech on Chirag Ghosh</title>
-    <link>https://chirag828049.github.io/TheWebsite/tags/non-tech/</link>
+    <link>https://blog.chiragghosh.me/tags/non-tech/</link>
     <description>Recent content in non-tech on Chirag Ghosh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Nov 2021 01:18:47 +0530</lastBuildDate><atom:link href="https://chirag828049.github.io/TheWebsite/tags/non-tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 01:18:47 +0530</lastBuildDate><atom:link href="https://blog.chiragghosh.me/tags/non-tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The One With My Fear Of Coding</title>
-      <link>https://chirag828049.github.io/TheWebsite/posts/fear-of-coding/</link>
+      <link>https://blog.chiragghosh.me/posts/fear-of-coding/</link>
       <pubDate>Thu, 04 Nov 2021 01:18:47 +0530</pubDate>
       
-      <guid>https://chirag828049.github.io/TheWebsite/posts/fear-of-coding/</guid>
+      <guid>https://blog.chiragghosh.me/posts/fear-of-coding/</guid>
       <description>No it wasn&amp;rsquo;t my idea to write this. The next two paragraphs weren&amp;rsquo;t even written for this. I was writing the about section for this website of mine. Halfway through, I realised that if I continue writing this, my about page will turn into a 500 line &amp;ldquo;Chirag&amp;rsquo;s childhood&amp;rdquo; real quick. So rather a post.
 My earliest engagement with programming was in class 7 because of BASIC. Ngl, I hated it.</description>
     </item>
